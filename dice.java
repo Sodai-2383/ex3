@@ -10,7 +10,7 @@ public class dice{
     dice(){
 	int a,b;
 	Random random = new Random();
-	
+
 	a=b=0;
 	
 	System.out.println("Rolling dice...");
@@ -27,7 +27,11 @@ public class dice{
 	System.out.println("Die 2: " + b);
 
 	System.out.println("Total value: " + (a+b));
-
+	if((a+b)>7) System.out.println("You won!");
+	else System.out.println("You lost!");
+	System.out.println();
     }
     
+
+
 }
