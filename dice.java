@@ -10,7 +10,10 @@ public class dice{
     dice(){
 	int a,b;
 	Random random = new Random();
+	String name;
 	
+	name = Greeting();
+		
 	a=b=0;
 	
 	System.out.println("Rolling dice...");
@@ -30,4 +33,19 @@ public class dice{
 
     }
     
+    String Greeting(){
+        String name;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("What is your name?");
+
+        name = sc.next();
+
+        System.out.println("Hello, " + name + "!");
+
+	
+	return name;
+	
+    }
+
 }
